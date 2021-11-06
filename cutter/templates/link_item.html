@@ -1,0 +1,10 @@
+<div class="card mb-3 mt-1 shadow-sm">
+  <div class="card-body">
+    <p class="card-text">
+      <a class="p-2 text-dark" href="{{ request.build_absolute_uri }}{{ link.short_url|linebreaksbr }}">
+          {{ request.build_absolute_uri }}{{ link.short_url|linebreaksbr }}
+      </a>
+      <p class="card-text">{{ link.url|linebreaksbr }}</p>
+      <small class="text-muted">{{ link.pub_date }}</small>
+  </div>
+</div>
